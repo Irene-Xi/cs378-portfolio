@@ -84,7 +84,7 @@ body {
 }
 
 /* Adjustments for larger screens can also be added if needed */
-@media (min-width: 769px) {
+@media (min-width: 60px) {
     .menu-item {
         flex-direction: row;
     }
