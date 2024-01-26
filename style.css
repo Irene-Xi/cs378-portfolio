@@ -16,16 +16,19 @@ body {
 .menu-item {
     display: flex;
     align-items: center;
+    justify-content: start; /* Align items to the start of the container */
     margin-bottom: 20px;
     background: #f9f9f9;
     border-radius: 5px;
+    overflow: hidden; /* Prevents content from spilling out */
 }
 
 .menu-image {
-    max-width: 100%;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 100%; /* Fixed width for the image, adjust as needed */
     height: auto;
     border-radius: 5px;
-    /* margin-right: 10px; */
+    margin-right: 5px;
 }
 
 .text-container {
@@ -33,6 +36,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    flex-grow: 1; /* Allows the container to grow to fill the space */
 }
 
 .menu-title {
@@ -46,7 +50,7 @@ body {
 
 .price {
     font-weight: bold;
-    display: block;
+    margin-bottom: 0.5em;
 }
 
 .btn {
@@ -56,37 +60,33 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 0.5em;
 }
 
-/* Responsive styles */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .menu-item {
-        /* flex-direction: column; */
-        text-align: center;
-        flex-direction: row;
+        flex-wrap: nowrap; /* Prevents wrapping of items */
     }
 
     .menu-image {
-        margin: 0 auto 10px; /* Centering the image */
-        width: 50%; /* Adjust size for mobile */
+        width: 100%; /* Smaller width for the image on mobile */
     }
 
     .text-container {
-        /* Ensures the text takes full width and aligns to center on smaller screens */
-        width: 100%;
-        text-align: center;
+        /* Adjust the margin or padding as needed for smaller screens */
+        margin-left: 10px;
     }
-
+    
     .menu-title, .menu-description, .price, .btn {
-        text-align: center;
-        /* width: 50%;*/
-        margin-bottom: 10px; 
+        font-size: smaller; /* Adjust the font size for smaller screens */
     }
 }
 
-/* Adjustments for larger screens can also be added if needed */
-@media (min-width: 6px) {
-    .menu-item {
-        flex-direction: row;
+/* This media query ensures that on very small screens,
+the layout remains unchanged and elements don't wrap onto new lines. */
+@media (max-width: 480px) {
+    .menu-image {
+        width: 100%; /* Even smaller width for the image on very small screens */
     }
 }
