@@ -61,25 +61,18 @@ body {
 /* Responsive styles */
 @media (max-width: 768px) {
     .menu-item {
-        flex-direction: column;
+        /* flex-direction: column; */
         text-align: center;
+        flex-direction: row;
     }
 
     .menu-image {
-        width: 50%; /* Adjust size for mobile */
-        margin: 0 auto 10px; /* Centering the image */
-    }
-
-    .text-container {
-        /* Ensures the text takes full width and aligns to center on smaller screens */
-        width: 100%;
-        text-align: center;
+        margin-right: 20px; /* Add spacing between image and text */
     }
 
     .menu-title, .menu-description, .price, .btn {
-        text-align: center;
-        /* width: 50%;*/
-        margin-bottom: 10px; 
+        flex: 1;
+        text-align: left;
     }
 }
 
