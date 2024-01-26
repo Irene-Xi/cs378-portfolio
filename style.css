@@ -67,17 +67,25 @@ body {
     }
 
     .menu-image {
-        margin-right: 20px; /* Add spacing between image and text */
+        margin: 0 auto 10px; /* Centering the image */
+        width: 50%; /* Adjust size for mobile */
+    }
+
+    .text-container {
+        /* Ensures the text takes full width and aligns to center on smaller screens */
+        width: 100%;
+        text-align: center;
     }
 
     .menu-title, .menu-description, .price, .btn {
-        flex: 1;
-        text-align: left;
+        text-align: center;
+        /* width: 50%;*/
+        margin-bottom: 10px; 
     }
 }
 
 /* Adjustments for larger screens can also be added if needed */
-@media (min-width: 60px) {
+@media (min-width: 6px) {
     .menu-item {
         flex-direction: row;
     }
