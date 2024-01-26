@@ -25,7 +25,14 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
 }
 
 .menu-title {
@@ -63,10 +70,22 @@ body {
         margin: 0 auto 10px; /* Centering the image */
     }
 
+    .text-container {
+        /* Ensures the text takes full width and aligns to center on smaller screens */
+        width: 100%;
+        text-align: center;
+    }
+
     .menu-title, .menu-description, .price, .btn {
         text-align: center;
-        width: 100%;
+        /* width: 50%;*/
+        margin-bottom: 10px; 
     }
 }
 
 /* Adjustments for larger screens can also be added if needed */
+@media (min-width: 769px) {
+    .menu-item {
+        flex-direction: row;
+    }
+}
