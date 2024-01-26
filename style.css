@@ -83,10 +83,4 @@ body {
     }
 }
 
-/* This media query ensures that on very small screens,
-the layout remains unchanged and elements don't wrap onto new lines. */
-@media (max-width: 480px) {
-    .menu-image {
-        width: 100%; /* Even smaller width for the image on very small screens */
-    }
-}
+
