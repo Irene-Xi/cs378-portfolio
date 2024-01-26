@@ -1,3 +1,72 @@
+/* Base styles */
 body {
-    color: hotpink;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
 }
+
+.menu-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.menu-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.menu-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.menu-description {
+    margin-bottom: 0.5em;
+}
+
+.price {
+    font-weight: bold;
+    display: block;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-image {
+        width: 50%; /* Adjust size for mobile */
+        margin: 0 auto 10px; /* Centering the image */
+    }
+
+    .menu-title, .menu-description, .price, .btn {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Adjustments for larger screens can also be added if needed */
