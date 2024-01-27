@@ -6,6 +6,26 @@ body {
     background: #f0f0f0;
 }
 
+.title_h1 {
+    font-size: 25px; /* Adjust this size to match the mockup */
+    color: #f4a30e; /* Change this color to match the mockup */
+    font-weight: bold; /* Use 'normal', 'bold', 'bolder', or an actual weight like '600' */
+    margin-bottom: 0.5em; /* Adjust spacing as needed */
+}
+
+.title_h2 {
+    font-size: 40px; /* Adjust this size to match the mockup */
+    color: #555; /* Change this color to match the mockup */
+    font-weight: normal; /* Adjust as needed */
+    margin-bottom: 1em; /* Adjust spacing as needed */
+}
+
+.logo {
+    width: 90%; /* Adjust based on your actual logo size */
+    margin-bottom: 5%;
+    height: auto;
+}
+
 .menu-container {
     text-align: center;
     background: #fff;
@@ -23,12 +43,14 @@ body {
     overflow: hidden; /* Prevents content from spilling out */
 }
 
+
 .menu-image {
     flex-shrink: 0; /* Prevents the image from shrinking */
-    width: 100%; /* Fixed width for the image, adjust as needed */
-    height: auto;
+    width: 90%; /* Fixed width for the image, adjust as needed */
+    /* height: 100px; */
     border-radius: 5px;
     margin-right: 5px;
+    /* padding-top: 90%; */
 }
 
 .text-container {
@@ -40,27 +62,51 @@ body {
 }
 
 .menu-title {
-    font-size: 1.5em;
+    font-weight: bold;
+    font-size: 3em;
     margin-bottom: 0.5em;
+    text-align: left;
 }
+
 
 .menu-description {
     margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.item-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .price {
-    font-weight: bold;
-    margin-bottom: 0.5em;
+    /* Aligns the price to the left */
+    text-align: left;
 }
 
-.btn {
-    background-color: #4CAF50;
+.add-btn {
+    /* Aligns the button to the right */
+    margin-left: auto; /* Pushes the button to the right */
+    background-color: #a6ada6;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
     margin-bottom: 0.5em;
+    text-align: right;
+}
+
+.btn {
+    background-color: #a6ada6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    text-align: right;
 }
 
 /* Responsive adjustments */
@@ -78,8 +124,25 @@ body {
         margin-left: 10px;
     }
     
-    .menu-title, .menu-description, .price, .btn {
+    .price, .title_h1 {
         font-size: smaller; /* Adjust the font size for smaller screens */
+    }
+
+    .add-btn {
+        padding: 5px 10px;
+    }
+
+    .menu-description {
+        font-size: 0.8em;
+    }
+
+    .menu-title {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    .title_h2 {
+        font-size: 20px;
     }
 }
 
