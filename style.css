@@ -124,7 +124,7 @@ body {
         margin-left: 10px;
     }
     
-    .price, .title_h1 {
+    .price, .title_h1, .logo {
         font-size: smaller; /* Adjust the font size for smaller screens */
     }
 
